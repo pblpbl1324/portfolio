@@ -3,6 +3,7 @@ import Button from "react-bootstrap/Button";
 import Projects from "./Projects";
 import SocialProfiles from "./SocialProfiles";
 import Title from "./Title";
+//import Jokes from "./Jokes";
 import profile from "../assets/profile.png";
 
 //this is where everything should be to get rendered in index.html
@@ -21,7 +22,7 @@ class App extends Component {
         return (
             <div>
                 <img src={profile} alt="Profile" className="profile"/>
-                <h1>Bill's Website</h1>
+                <h1>Bill's Portfolio</h1>
                 <p>Welcome to my profile.</p>
                 <Title/>
                 {
@@ -41,6 +42,10 @@ class App extends Component {
                 <Projects/>
                 <hr/>
                 <SocialProfiles/>
+                {
+                    //<hr/>
+                    //<Jokes/>
+                }
             </div>
         )
     }
