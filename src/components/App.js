@@ -1,53 +1,18 @@
 import React, { Component } from "react";
-import Button from "react-bootstrap/Button";
-import Projects from "./Projects";
-import SocialProfiles from "./SocialProfiles";
-import Title from "./Title";
-//import Jokes from "./Jokes";
-import profile from "../assets/profile.png";
+import Home from "./Home";
+import Jokes from "./Jokes";
+import { HashRouter, Route } from "react-router-dom";
 
-//this is where everything should be to get rendered in index.html
+//this is the hub that manages the components
 class App extends Component {
-
-    //update state on initialization
-    state = { displayBio : false };
-
-    //use setState to change state, don't directly modify state
-    //it calls render() again at the end of setState
-    toggleBio = () => {
-        this.setState({ displayBio : !this.state.displayBio });
-    }
 
     render() {
         return (
-            <div>
-                <img src={profile} alt="Profile" className="profile"/>
-                <h1>Bill's Portfolio</h1>
-                <p>Welcome to my profile.</p>
-                <Title/>
-                {
-                    this.state.displayBio ? (
-                        <div>
-                            <p>I am an IB student from Milliken Mills HS.</p>
-                            <p>I like math, computer science, developing games, and making music.</p>
-                            <Button variant="primary" onClick={this.toggleBio}>Show less</Button>
-                        </div>
-                    ) : (
-                        <div>
-                            <Button variant="primary" onClick={this.toggleBio}>Read more</Button>
-                        </div>
-                    )
-                }
-                <hr/>
-                <Projects/>
-                <hr/>
-                <SocialProfiles/>
-                {
-                    //<hr/>
-                    //<Jokes/>
-                }
-            </div>
-        )
+            <HashRouter basename="/">
+                <Route exact path="/" component={Home} />
+                <Route path="/jokes" component={Jokes} />
+            </HashRouter>
+        );
     }
 }
 

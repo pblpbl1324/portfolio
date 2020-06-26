@@ -32,6 +32,11 @@ p {
     margin: 0.5em;
 }
 
+.navbar {
+    margin: -20px;
+    margin-bottom: 20px;
+}
+
 .title-fade-out {
     opacity: 0;
     animation-name: fade-out;
