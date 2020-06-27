@@ -1,32 +1,25 @@
-import React, { Component } from "react";
+import React from "react";
 import { Navbar, Nav } from "react-bootstrap";
 import profile from "../assets/profile.png";
 
-class Navigation extends Component {
+const Navigation = props => {
+    //component is passed down thru props and navigation will now apply the navbar on top of the component
+    const { Component, activeKey } = props;
 
-    componentDidMount() {
-        console.log("mounted");
-    }
-
-    componentWillUnmount() {
-        console.log("unmounted");
-    }
-
-    render() {
-        return (
-            <div>
-                <Navbar bg="dark" variant="dark">
-                    <Navbar.Brand href="#/">
-                        <img src={profile} style={{ width: 35, height: 35 }} alt="Profile" className="profile"/>
-                    </Navbar.Brand>
-                    <Nav activeKey={this.props.activeKey} className="mr-auto">
-                        <Nav.Link href="#/">Home</Nav.Link>
-                        <Nav.Link href="#/jokes">About</Nav.Link>
-                    </Nav>
-                </Navbar>
-            </div>
-        )
-    }
+    return (
+        <div>
+            <Navbar bg="dark" variant="dark">
+                <Navbar.Brand href="#/">
+                    <img src={profile} style={{ width: 35, height: 35 }} alt="Profile" className="profile"/>
+                </Navbar.Brand>
+                <Nav activeKey={activeKey} className="mr-auto">
+                    <Nav.Link href="#/">Home</Nav.Link>
+                    <Nav.Link href="#/jokes">About</Nav.Link>
+                </Nav>
+            </Navbar>
+            <Component/>
+        </div>
+    )
 }
 
 export default Navigation;

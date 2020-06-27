@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import Navigation from "./Navigation";
 import Button from "react-bootstrap/Button";
 
 const Joke = ({ joke: { setup, punchline }}) => (
@@ -21,7 +20,8 @@ class Jokes extends Component {
         .catch(error => alert(error.message));
     }
 
-    componentWillUnmount() {
+    componentWillUnmount()
+    {
         this.controller.abort();
     }
 
@@ -36,7 +36,6 @@ class Jokes extends Component {
     render() {
         return (
             <div>
-                <Navigation activeKey="#/jokes"/>
                 <h3>Random Joke</h3>
                 <Joke joke={this.state.joke}/>
                 <hr/>

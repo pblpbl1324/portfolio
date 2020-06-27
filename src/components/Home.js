@@ -3,7 +3,6 @@ import Button from "react-bootstrap/Button";
 import Projects from "./Projects";
 import SocialProfiles from "./SocialProfiles";
 import Title from "./Title";
-import Navigation from "./Navigation";
 import profile from "../assets/profile.png";
 
 //this is where everything should be to get rendered in index.html
@@ -19,9 +18,9 @@ class Home extends Component {
     }
 
     render() {
+        console.log("hi");
         return (
             <div>
-                <Navigation activeKey="#/"/>
                 <img src={profile} style={{ width: 200, height: 200, marginBottom: ".5rem" }}alt="Profile" className="profile"/>
                 <h1>Bill's Portfolio</h1>
                 <p>Welcome to my profile.</p>
