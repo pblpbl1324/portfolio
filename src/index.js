@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Home from "./components/Home";
-import Jokes from "./components/Jokes";
+import PathfindingVisualizer from "./components/PathfindingVisualizer";
 import Navigation from "./components/Navigation";
 import { HashRouter, Route } from "react-router-dom";
 import "./index.css";
@@ -10,7 +10,7 @@ import "./index.css";
 ReactDOM.render(
     <HashRouter basename="/">
         <Route exact path="/" render={() => <Navigation Component={Home} activeKey="#/"/>}/>
-        <Route path="/jokes" render={() => <Navigation Component={Jokes} activeKey="#/jokes"/>}/>
+        <Route path="/graph" render={() => <Navigation Component={PathfindingVisualizer} activeKey="#/graph"/>}/>
     </HashRouter>, 
     document.getElementById("root")
 );

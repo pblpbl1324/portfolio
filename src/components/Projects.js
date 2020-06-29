@@ -7,9 +7,9 @@ const Project = props => {
     //tie all project attributes to props' keys and render it
     const { title, image, description, link, linkdesc } = props.project;
     return (
-        <div style={{ display: "inline-block", width: 400, verticalAlign: "top", margin: 10 }}>
+        <div className="project">
             <h3>{title}</h3>
-            <img src={image} alt="Project" style={{ height: 200 }}/>
+            <img src={image} alt="Project" style={{ height: "40vmin", minHeight: 100, maxHeight: 200 }}/>
             <p></p>
             <p>{description}</p>
             <a href={link} target="_blank">{linkdesc}</a>

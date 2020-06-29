@@ -18,10 +18,9 @@ class Home extends Component {
     }
 
     render() {
-        console.log("hi");
         return (
             <div>
-                <img src={profile} style={{ width: 200, height: 200, marginBottom: ".5rem" }}alt="Profile" className="profile"/>
+                <img src={profile} className="profile" alt="Profile"/>
                 <h1>Bill's Portfolio</h1>
                 <p>Welcome to my profile.</p>
                 <Title/>
