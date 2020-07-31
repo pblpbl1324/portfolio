@@ -8,8 +8,8 @@ const PROJECTS = [
         id: 0,
         title: "Try Not to Die",
         description: "A hardcore platformer in which you need to collect coins, dodge obstacles, and reach the end.",
-        link: "https://drive.google.com/uc?export=download&id=1Ad2FUXKiVT94iMK6bnFchH3JNK5jvZwQ",
-        linkdesc: "Download here",
+        link: "https://github.com/pblpbl1324/try-not-to-die",
+        linkdesc: "View on Github",
         image: project1
     },
     {
@@ -25,7 +25,7 @@ const PROJECTS = [
         title: "FormsTunes",
         description: "The channel that I post my music on! I make electronic songs using FL Studio 12.",
         link: "https://www.youtube.com/c/FormsTunes",
-        linkdesc: "View here",
+        linkdesc: "View on YouTube",
         image: project3
     },
     {

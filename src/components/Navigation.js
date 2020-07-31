@@ -10,11 +10,11 @@ const Navigation = props => {
         <div>
             <Navbar bg="dark" variant="dark">
                 <Navbar.Brand href="#/">
-                    <img src={profile} style={{ height: 35, minHeight: 35, maxHeight: 35,  marginBottom: 0}} alt="Profile" className="profile"/>
+                    <img src={profile} style={{ height: 35, minHeight: 35, maxHeight: 35,  marginBottom: 0 }} alt="Profile" className="profile"/>
                 </Navbar.Brand>
                 <Nav activeKey={activeKey} className="mr-auto">
                     <Nav.Link href="#/">Home</Nav.Link>
-                    <Nav.Link href="#/graph">Graph</Nav.Link>
+                    <Nav.Link href="#/sort">Sort</Nav.Link>
                 </Nav>
             </Navbar>
             <Component/>

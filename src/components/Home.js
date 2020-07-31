@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Button from "react-bootstrap/Button";
 import Projects from "./Projects";
 import SocialProfiles from "./SocialProfiles";
-import Title from "./Title";
+import Title from "../data/Title";
 import profile from "../assets/profile.png";
 
 //this is where everything should be to get rendered in index.html

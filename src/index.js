@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Home from "./components/Home";
-import PathfindingVisualizer from "./components/PathfindingVisualizer";
 import Navigation from "./components/Navigation";
+import SortingVisualizer from "./components/SortingVisualizer";
 import { HashRouter, Route } from "react-router-dom";
 import "./index.css";
 
@@ -10,7 +10,7 @@ import "./index.css";
 ReactDOM.render(
     <HashRouter basename="/">
         <Route exact path="/" render={() => <Navigation Component={Home} activeKey="#/"/>}/>
-        <Route path="/graph" render={() => <Navigation Component={PathfindingVisualizer} activeKey="#/graph"/>}/>
+        <Route path="/sort" render={() => <Navigation Component={SortingVisualizer} activeKey="#/sort"/>}/>
     </HashRouter>, 
     document.getElementById("root")
 );

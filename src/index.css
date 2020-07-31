@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5 {
 .profile {
     border-radius: 50%;
     height: 40vmin;
-    min-height: 100px;
+    min-height: 80px;
     max-height: 200px;
     margin-bottom: .5rem;
 }
@@ -55,15 +55,24 @@ p {
 }
 
 .title-fade-out {
-    opacity: 0;
     animation-name: fade-out;
     animation-duration: 1s;
 }
 
 .title-fade-in {
-    opacity: 1;
     animation-name: fade-in;
     animation-duration: 1s;
+}
+
+.array-container {
+    margin: 40px;
+}
+
+.array-bar {
+    width: 5px;
+    background-color: lightskyblue;
+    display: inline-block;
+    margin: 0px 2px;
 }
 
 @keyframes fade-out {
