@@ -20,7 +20,7 @@ const Project = props => {
 //functional component can be applied to anything w/o state
 const Projects = () => (
     <div>
-        <h2>My Projects</h2>
+        <h2>Projects and Extracurriculars</h2>
         <div>
         {
             //pass each project object to the Project class to convert it to jsx code

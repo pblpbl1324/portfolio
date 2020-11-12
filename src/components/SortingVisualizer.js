@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import Button from "react-bootstrap/Button";
+import * as sortingAlgorithms from "./SortingAlgorithm";
 
 class SortingVisualizer extends Component {
 
@@ -9,13 +11,32 @@ class SortingVisualizer extends Component {
     }
 
     //initialize array to random values
-    resetArray() {
+    resetArray = () => {
+        const width = window.innerWidth - 150;
+        const n = Math.max(width/10, 10);
         const array = [];
-        for(let i = 0; i < 190; i++)
+        for(let i = 0; i < n; i++)
         {
             array.push(randomInt(100, 600));
         }
         this.setState({array});
+    }
+
+    bubbleSort = () => {
+
+    }
+
+    mergeSort = () => {
+        const sortedArray = sortingAlgorithms.mergeSort(this.state.array);
+        console.log(sortedArray);
+    }
+
+    quickSort = () => {
+        
+    }
+
+    heapSort = () => {
+        
     }
 
     render() {
@@ -23,8 +44,14 @@ class SortingVisualizer extends Component {
         return (
             <div className="array-container">
                 {array.map((value, idx) => (
-                    <div className="array-bar" key={idx} style={{ height: `${value}px` }}></div>
+                    <div className="array-bar" key={idx} style={{ height: `${value/15}vh` }}></div>
                 ))}
+                <hr/>
+                <Button variant="success" onClick={this.resetArray}>New Array</Button>
+                <Button variant="primary" onClick={this.bubbleSort}>Bubble Sort</Button>
+                <Button variant="info" onClick={this.mergeSort}>Merge Sort</Button>
+                <Button variant="secondary" onClick={this.quickSort}>Quick Sort</Button>
+                <Button variant="dark" onClick={this.heapSort}>Heap Sort</Button>
             </div>
         )
     }

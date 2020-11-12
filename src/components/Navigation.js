@@ -14,7 +14,8 @@ const Navigation = props => {
                 </Navbar.Brand>
                 <Nav activeKey={activeKey} className="mr-auto">
                     <Nav.Link href="#/">Home</Nav.Link>
-                    <Nav.Link href="#/sort">Sort</Nav.Link>
+                    <Nav.Link href="#/videos">Videos</Nav.Link>
+                    <Nav.Link href="#/about">About</Nav.Link>
                 </Nav>
             </Navbar>
             <Component/>

@@ -49,6 +49,10 @@ p {
     margin: 0.5em;
 }
 
+Button {
+    margin: 10px;
+}
+
 .navbar {
     margin: -20px;
     margin-bottom: 20px;

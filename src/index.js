@@ -2,7 +2,8 @@ import React from "react";
 import ReactDOM from "react-dom";
 import Home from "./components/Home";
 import Navigation from "./components/Navigation";
-import SortingVisualizer from "./components/SortingVisualizer";
+import Videos from "./components/Videos";
+import About from "./components/About";
 import { HashRouter, Route } from "react-router-dom";
 import "./index.css";
 
@@ -10,7 +11,8 @@ import "./index.css";
 ReactDOM.render(
     <HashRouter basename="/">
         <Route exact path="/" render={() => <Navigation Component={Home} activeKey="#/"/>}/>
-        <Route path="/sort" render={() => <Navigation Component={SortingVisualizer} activeKey="#/sort"/>}/>
+        <Route path="/videos" render={() => <Navigation Component={Videos} activeKey="#/videos"/>}/>
+        <Route path="/about" render={() => <Navigation Component={About} activeKey="#/about"/>}/>
     </HashRouter>, 
     document.getElementById("root")
 );
