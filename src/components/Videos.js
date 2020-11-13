@@ -3,9 +3,10 @@ import VIDEOS from "../data/videos";
 
 const Video = props => {
     //tie all video attributes to props' keys and render it
-    const { link, description } = props.video;
+    const { title, description, link } = props.video;
     return (
         <div>
+            <h4>{title}</h4>
             <iframe width="560" height="315" src={link} 
             frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
             gyroscope; picture-in-picture; fullscreen"></iframe>

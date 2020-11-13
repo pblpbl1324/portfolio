@@ -51,11 +51,11 @@ class Home extends Component {
                             <p>COMC 2019: 60/80</p>
                             <p>CCC 2020: 37/75</p>
                             <p>Fermat 2020: 132/150</p>
-                            <Button variant="primary" onClick={this.toggleScores} style={{ margin: 0 }}>Hide scores</Button>
+                            <Button variant="success" onClick={this.toggleScores} style={{ margin: 0 }}>Hide scores</Button>
                         </div>
                     ) : (
                         <div>
-                            <Button variant="primary" onClick={this.toggleScores} style={{ margin: 0 }}>Show scores</Button>
+                            <Button variant="success" onClick={this.toggleScores} style={{ margin: 0 }}>Show scores</Button>
                         </div>
                     )
                 }
