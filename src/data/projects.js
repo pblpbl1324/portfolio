@@ -3,6 +3,7 @@ import project2 from "../assets/project2.png";
 import project3 from "../assets/project3.png";
 import project4 from "../assets/project4.png";
 import mathsoc from "../assets/mathsoc.png";
+import tntdold from "../assets/tntdold.png"
 
 const PROJECTS = [
     {
@@ -44,6 +45,14 @@ const PROJECTS = [
         link: "https://www.youtube.com/channel/UCU_ac4-HfFnXykqnoCHQD_Q",
         linkdesc: "View here",
         image: project4
+    },
+    {
+        id: 5,
+        title: "Try Not to Die (old)",
+        description: "The original game I made in Grade 9. ",
+        link: "https://pblpbl.itch.io/try-not-to-die",
+        linkdesc: "View on itch.io",
+        image: tntdold
     }
 ];
 

@@ -27,8 +27,9 @@ class SortingVisualizer extends Component {
     }
 
     mergeSort = () => {
-        const sortedArray = sortingAlgorithms.mergeSort(this.state.array);
-        console.log(sortedArray);
+        sortingAlgorithms.mergeSort(this.state.array, 0, this.state.array.length-1);
+        this.setState({array: this.state.array});
+        console.log(this.state.array);
     }
 
     quickSort = () => {
@@ -42,10 +43,12 @@ class SortingVisualizer extends Component {
     render() {
         const { array } = this.state;
         return (
-            <div className="array-container">
+            <div>
+                <div className="array-container">
                 {array.map((value, idx) => (
                     <div className="array-bar" key={idx} style={{ height: `${value/15}vh` }}></div>
                 ))}
+                </div>
                 <hr/>
                 <Button variant="success" onClick={this.resetArray}>New Array</Button>
                 <Button variant="primary" onClick={this.bubbleSort}>Bubble Sort</Button>
