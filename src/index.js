@@ -14,7 +14,6 @@ ReactDOM.render(
         <Route exact path="/" render={() => <Navigation Component={Home} activeKey="#/"/>}/>
         <Route path="/videos" render={() => <Navigation Component={Videos} activeKey="#/videos"/>}/>
         <Route path="/about" render={() => <Navigation Component={About} activeKey="#/about"/>}/>
-        <Route path="/sort" render={() => <Navigation Component={Sort} activeKey="#/sort"/>}/>
     </HashRouter>, 
     document.getElementById("root")
 );
