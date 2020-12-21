@@ -1,3 +1,3 @@
 # portfolio
-A portfolio app I created in ReactJS.
+The github pages stuff for my app.
 
