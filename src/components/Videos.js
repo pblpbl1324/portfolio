@@ -6,12 +6,12 @@ const Video = props => {
     const { title, description, link } = props.video;
     return (
         <div>
+            <hr/>
             <h4>{title}</h4>
             <iframe width="560" height="315" src={link} 
-            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+            frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
             gyroscope; picture-in-picture; fullscreen"></iframe>
             <p>{description}</p>
-            <hr/>
         </div>
     )
 }
@@ -20,7 +20,6 @@ const Videos = () => (
     <div>
         <h2>Videos</h2>
         <p>A collection of videos I created for Info Index and MathSoc.</p>
-        <hr/>
         <div>
         {
             //pass each project object to the Project class to convert it to jsx code

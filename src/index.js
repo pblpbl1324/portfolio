@@ -4,7 +4,6 @@ import Home from "./components/Home";
 import Navigation from "./components/Navigation";
 import Videos from "./components/Videos";
 import About from "./components/About";
-import Sort from "./components/SortingVisualizer";
 import { HashRouter, Route } from "react-router-dom";
 import "./index.css";
 

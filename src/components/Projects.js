@@ -9,7 +9,7 @@ const Project = props => {
     return (
         <div className="project">
             <h3>{title}</h3>
-            <img src={image} alt="Project" style={{ height: "40vmin", minHeight: 100, maxHeight: 200 }}/>
+            <img src={image} className="project-image" alt="Project" style={{height: "40vmin", minHeight: 100, maxHeight: 200 }}/>
             <p></p>
             <p>{description}</p>
             <a href={link} target="_blank">{linkdesc}</a>
